@@ -45,7 +45,7 @@ export default function Footer() {
           <div className="font-mono-tag text-[10px] uppercase tracking-[0.22em] text-stone-500 dark:text-stone-500 mb-4">Connect</div>
           <ul className="space-y-2.5 text-sm text-stone-700 dark:text-stone-300">
             <li>
-              <a href="https://github.com/effective-mathematicians" target="_blank" rel="noreferrer" className="hover:text-orange-700 dark:hover:text-orange-400 inline-flex items-center gap-2">
+              <a href="https://github.com/orgs/High-Impact-Mathematicians/discussions" target="_blank" rel="noreferrer" className="hover:text-orange-700 dark:hover:text-orange-400 inline-flex items-center gap-2">
                 <Github size={14} /> GitHub Forum
               </a>
             </li>

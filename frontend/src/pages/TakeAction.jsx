@@ -4,7 +4,7 @@ import EASectionHeader from "../components/EASectionHeader";
 import EACard from "../components/EACard";
 import { ArrowUpRight, ArrowRight } from "lucide-react";
 
-const FORUM_URL = "https://github.com/orgs/Effective-Mathematicians/discussions";
+const FORUM_URL = "https://github.com/orgs/High-Impact-Mathematicians/discussions";
 
 const ways = [
   {
