@@ -106,10 +106,15 @@ const TESTIMONIALS = [
     portrait: "https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?auto=format&fit=crop&w=400&q=80",
   },
   {
-    quote: "Coming from pure mathematics, I assumed my work was forever decoupled from the real world. The problem profiles here showed me, in detail, how wrong that assumption was.",
-    name: "Sofía Ríos",
-    role: "Postdoc, dynamical systems",
-    portrait: "https://images.unsplash.com/photo-1438761681033-6461ffad8d80?auto=format&fit=crop&w=400&q=80",
+    quote: "I was an awarded undergraduate math student, but had no guidance on how to connect my interests and skills to my values and altruistic ambitions. This community and these resources are exactly what I wish a career counselor had showed me early in my journey!",
+    name: "Jonah Boucher",
+    role: (
+      <>
+        Director of youth impact nonprofits, <a href="https://www.non-trivial.org/" target="_blank" rel="noopener noreferrer" className="text-orange-600 hover:underline">Non-Trivial</a> and <a href="https://leaf.courses/" target="_blank" rel="noopener noreferrer" className="text-orange-600 hover:underline">Leaf</a>
+      </>
+    ),
+    portrait: `${process.env.PUBLIC_URL}/images/jonah-boucher.jpeg`,
+    linkedin: "https://www.linkedin.com/in/jonah-boucher/",
   },
 ];
 
@@ -145,21 +150,42 @@ function TestimonialCarousel() {
 
         <div className="grid grid-cols-1 md:grid-cols-12 gap-8 md:gap-12 items-center md:px-12 lg:px-16">
           <div className="md:col-span-3 flex md:justify-end">
-            <img
-              key={t.portrait}
-              src={t.portrait}
-              alt={t.name}
-              className="w-32 h-32 md:w-40 md:h-40 rounded-full object-cover em-fade-up"
-              loading="lazy"
-              data-testid="testimonial-portrait"
-            />
+            {t.linkedin ? (
+              <a href={t.linkedin} target="_blank" rel="noopener noreferrer">
+                <img
+                  key={t.portrait}
+                  src={t.portrait}
+                  alt={t.name}
+                  className="w-32 h-32 md:w-40 md:h-40 rounded-full object-cover em-fade-up"
+                  loading="lazy"
+                  data-testid="testimonial-portrait"
+                />
+              </a>
+            ) : (
+              <img
+                key={t.portrait}
+                src={t.portrait}
+                alt={t.name}
+                className="w-32 h-32 md:w-40 md:h-40 rounded-full object-cover em-fade-up"
+                loading="lazy"
+                data-testid="testimonial-portrait"
+              />
+            )}
           </div>
           <blockquote className="md:col-span-9 em-fade-up" key={i}>
             <p className="font-serif-display text-2xl md:text-[32px] leading-[1.28] text-stone-900 dark:text-stone-100">
               "{t.quote.replace(/^"|"$/g, "")}"
             </p>
             <footer className="mt-6 text-stone-700 dark:text-stone-300">
-              <div className="font-medium text-stone-900 dark:text-stone-100" data-testid="testimonial-name">{t.name}</div>
+              <div className="font-medium text-stone-900 dark:text-stone-100" data-testid="testimonial-name">
+                {t.linkedin ? (
+                  <a href={t.linkedin} target="_blank" rel="noopener noreferrer" className="hover:underline">
+                    {t.name}
+                  </a>
+                ) : (
+                  t.name
+                )}
+              </div>
               <div className="text-sm text-stone-600 dark:text-stone-400">{t.role}</div>
             </footer>
           </blockquote>
