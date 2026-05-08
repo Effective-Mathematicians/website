@@ -46,9 +46,9 @@ export default function Header() {
           data-testid="logo-link"
         >
           <Logo size={30} />
-          <div className="leading-none truncate">
+          <div className="leading-[1.15] pb-[2px]">
             <div className="font-serif-display text-[18px] md:text-[22px] font-semibold tracking-tight">
-              <span style={{ color: "#EA580C" }}>Effective </span>
+              <span style={{ color: "#EA580C" }}>High Impact </span>
               <span className="text-stone-900 dark:text-stone-100">Mathematicians</span>
             </div>
           </div>

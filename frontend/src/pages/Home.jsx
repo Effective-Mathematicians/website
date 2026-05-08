@@ -469,7 +469,7 @@ export default function Home() {
         </div>
       </section>
 
-      {/* WHAT IS AN EFFECTIVE MATHEMATICIAN — with low-opacity sigma watermark */}
+      {/* WHAT IS A HIGH IMPACT MATHEMATICIAN — with low-opacity sigma watermark */}
       <section className="relative bg-white dark:bg-stone-950 overflow-hidden" data-testid="definition-section">
         {/* Sigma watermark, low opacity */}
         <div
@@ -481,7 +481,7 @@ export default function Home() {
         </div>
 
         <div className="relative max-w-[1240px] mx-auto px-6 md:px-10 py-24 md:py-32">
-          <EASectionHeader title="What is an effective mathematician?" />
+          <EASectionHeader title="What is a high impact mathematician?" />
 
           <div className="mt-16 grid grid-cols-1 md:grid-cols-2 gap-12 md:gap-20">
             <div>

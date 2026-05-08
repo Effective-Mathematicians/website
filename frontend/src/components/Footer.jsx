@@ -11,7 +11,7 @@ export default function Footer() {
           <div className="flex items-center gap-3">
             <Logo size={36} />
             <span className="font-serif-display text-[22px] font-semibold">
-              <span style={{ color: "#EA580C" }}>Effective </span>
+              <span style={{ color: "#EA580C" }}>High Impact </span>
               <span className="text-stone-900 dark:text-stone-100">Mathematicians</span>
             </span>
           </div>
@@ -59,7 +59,7 @@ export default function Footer() {
       </div>
 
       <div className="max-w-[1240px] mx-auto px-6 md:px-10 pb-10 pt-2 flex flex-col md:flex-row md:items-center md:justify-between gap-3 text-xs text-stone-500 dark:text-stone-500 border-t border-stone-200 dark:border-stone-800">
-        <div className="pt-6">© {new Date().getFullYear()} Effective Mathematicians</div>
+        <div className="pt-6">© {new Date().getFullYear()} High Impact Mathematicians</div>
       </div>
     </footer>
   );
