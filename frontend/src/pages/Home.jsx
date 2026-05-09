@@ -88,24 +88,6 @@ const MARQUEE_ITEMS = [
 
 const TESTIMONIALS = [
   {
-    quote: "Many of the concepts here will be familiar to mathematicians. What's unusual is to see those tools used to develop a practical guide on how to point a career — it doesn't tell you what to do; it sets out a framework for thinking it through.",
-    name: "Dr. Rachel Glennerster",
-    role: "Associate Professor, paraphrased",
-    portrait: "https://images.unsplash.com/photo-1573496359142-b8d87734a5a2?auto=format&fit=crop&w=400&q=80",
-  },
-  {
-    quote: "I'd been quietly uncomfortable with the gap between what my training was supposed to mean and what I spent most of my time doing. This community was the first place that asked, in a quantitative way, where my skills should actually go.",
-    name: "Mira Khan",
-    role: "PhD student, statistical genetics",
-    portrait: "https://images.unsplash.com/photo-1494790108377-be9c29b29330?auto=format&fit=crop&w=400&q=80",
-  },
-  {
-    quote: "What I value here is the willingness to put numbers on uncomfortable questions, and the willingness to update when those numbers come back wrong. It's a rare combination.",
-    name: "Daniel Okafor",
-    role: "Bayesian modeller, public-health policy",
-    portrait: "https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?auto=format&fit=crop&w=400&q=80",
-  },
-  {
     quote: "I was an awarded undergraduate math student, but had no guidance on how to connect my interests and skills to my values and altruistic ambitions. This community and these resources are exactly what I wish a career counselor had showed me early in my journey!",
     name: "Jonah Boucher",
     role: (
@@ -115,6 +97,24 @@ const TESTIMONIALS = [
     ),
     portrait: `${process.env.PUBLIC_URL}/images/jonah-boucher.jpeg`,
     linkedin: "https://www.linkedin.com/in/jonah-boucher/",
+  },
+  {
+    quote: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat duis aute irure dolor.",
+    name: "Lorem Ipsum",
+    role: "Placeholder Role, Lorem Organization",
+    portrait: "https://placehold.co/400x400/e7e5e4/78716c?text=Photo",
+  },
+  {
+    quote: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit.",
+    name: "Lorem Ipsum",
+    role: "Placeholder Role, Lorem Organization",
+    portrait: "https://placehold.co/400x400/e7e5e4/78716c?text=Photo",
+  },
+  {
+    quote: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt neque porro quisquam.",
+    name: "Lorem Ipsum",
+    role: "Placeholder Role, Lorem Organization",
+    portrait: "https://placehold.co/400x400/e7e5e4/78716c?text=Photo",
   },
 ];
 
