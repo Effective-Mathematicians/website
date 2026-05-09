@@ -1,18 +1,18 @@
 {
   "files": {
-    "main.css": "/website/static/css/main.a663285b.css",
-    "main.js": "/website/static/js/main.ad00ddb1.js",
+    "main.css": "/website/static/css/main.0ea6fa10.css",
+    "main.js": "/website/static/js/main.e3adc471.js",
     "static/media/climate-change.jpg": "/website/static/media/climate-change.916020d61aff3ea959ac.jpg",
     "static/media/global-health.jpg": "/website/static/media/global-health.721b260d892eff52a550.jpg",
     "static/media/biosecurity.jpg": "/website/static/media/biosecurity.b65a4fefeac8e410ed02.jpg",
     "static/media/ai-safety.jpg": "/website/static/media/ai-safety.0425c41ec110d17a026c.jpg",
     "static/media/animal-welfare.jpg": "/website/static/media/animal-welfare.f311533472936687994f.jpg",
     "index.html": "/website/index.html",
-    "main.a663285b.css.map": "/website/static/css/main.a663285b.css.map",
-    "main.ad00ddb1.js.map": "/website/static/js/main.ad00ddb1.js.map"
+    "main.0ea6fa10.css.map": "/website/static/css/main.0ea6fa10.css.map",
+    "main.e3adc471.js.map": "/website/static/js/main.e3adc471.js.map"
   },
   "entrypoints": [
-    "static/css/main.a663285b.css",
-    "static/js/main.ad00ddb1.js"
+    "static/css/main.0ea6fa10.css",
+    "static/js/main.e3adc471.js"
   ]
 }
