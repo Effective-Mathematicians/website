@@ -328,7 +328,14 @@ export default function AboutMission() {
             <div className="font-mono-tag text-[11px] uppercase tracking-[0.2em] text-stone-400 dark:text-stone-600 mb-4">
               Theory of change — infographic
             </div>
-            <ImagePlaceholder label="Theory of change infographic" aspect="aspect-[21/9]" />
+            <div className="w-full aspect-[21/9] rounded-lg overflow-hidden border border-stone-200 dark:border-stone-800 bg-stone-50 dark:bg-stone-900/60">
+              <img
+                src={`${process.env.PUBLIC_URL}/images/infographic.jpg`}
+                alt="Theory of change infographic"
+                loading="lazy"
+                className="w-full h-full object-cover"
+              />
+            </div>
           </div>
 
         </div>
