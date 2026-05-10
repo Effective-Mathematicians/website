@@ -69,7 +69,7 @@ export default function AboutTeam() {
               Help build this community
             </h2>
             <p className="mt-4 text-stone-600 dark:text-stone-400 max-w-2xl text-[15px] leading-relaxed">
-              If you care about directing mathematical talent toward high-impact work, there are practical ways to contribute right now.
+              If you care about directing mathematical talent toward high-impact work, we would love for you to join us!
             </p>
           </div>
           <div className="grid grid-cols-1 md:grid-cols-2 gap-8 md:gap-10">
@@ -95,7 +95,7 @@ export default function AboutTeam() {
                 Partner with us
               </h3>
               <p className="text-stone-600 dark:text-stone-400 text-[15px] leading-relaxed mb-6">
-                We actively partner with EA organizations, mathematics communities, educational institutions, and research initiatives that share our commitment to high-impact work.
+                We are actively seeking to partner with organizations, mathematics communities, educational institutions, and research initiatives that share our commitment to high-impact work.
               </p>
               <p className="text-stone-600 dark:text-stone-400 text-[15px] leading-relaxed mb-6">
                 Partnerships include co-hosting events, cross-promoting resources, providing talent pipelines to organizations working on neglected cause areas, and collaborating on research and curriculum development.
@@ -119,7 +119,7 @@ export default function AboutTeam() {
               Read our mission and values
             </h2>
             <p className="text-stone-600 dark:text-stone-400 text-[15px] leading-relaxed mb-6">
-              Learn how we think about impact, collaboration, and the role of mathematicians in solving the world's most urgent problems.
+              Learn how we think about impact and our theory of change.
             </p>
             <Link
               to="/about/mission"
