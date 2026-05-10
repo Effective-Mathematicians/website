@@ -7,12 +7,16 @@ const FOUNDERS = [
   {
     name: "Vivan Panda",
     role: "Co-founder",
-    image: "https://placehold.co/300x350/e7e5e4/a8a29e?text=Vivan",
+    image: `${process.env.PUBLIC_URL}/images/vivan.png`,
+    linkedin: "https://www.linkedin.com/in/vivanpanda/",
+    imageClassName: "object-[center_5%]",
   },
   {
     name: "Kushal Pagarani",
     role: "Co-founder",
-    image: "https://placehold.co/300x350/d6d3d1/a8a29e?text=Kushal",
+    image: `${process.env.PUBLIC_URL}/images/kushal.jpg`,
+    linkedin: "https://www.linkedin.com/in/kushal-pagarani-333874226/",
+    imageClassName: "object-[center_70%]",
   },
 ];
 
@@ -40,13 +44,20 @@ export default function AboutTeam() {
           </div>
           <div className="grid grid-cols-1 sm:grid-cols-2 gap-5 md:gap-7 max-w-[42rem]">
             {FOUNDERS.map((founder) => (
-              <div key={founder.name} className="flex flex-col items-start text-left bg-stone-50 dark:bg-stone-900/50 border border-stone-200 dark:border-stone-800 rounded-md p-4">
-                <div className="w-full h-72 rounded-md overflow-hidden mb-5">
+              <a
+                key={founder.name}
+                href={founder.linkedin}
+                target="_blank"
+                rel="noreferrer"
+                aria-label={`${founder.name} on LinkedIn`}
+                className="group flex flex-col items-start text-left bg-stone-50 dark:bg-stone-900/50 border border-stone-200 dark:border-stone-800 rounded-md p-4 transition-colors hover:border-orange-500/80 hover:bg-orange-50/40 dark:hover:border-orange-400/70 dark:hover:bg-orange-500/10"
+              >
+                <div className="w-full aspect-[3/4] rounded-md overflow-hidden mb-5">
                   <img
                     src={founder.image}
                     alt={founder.name}
                     loading="lazy"
-                    className="w-full h-full object-cover"
+                    className={`w-full h-full object-cover grayscale transition-all duration-300 group-hover:grayscale-0 ${founder.imageClassName || "object-center"}`}
                   />
                 </div>
                 <h3 className="font-serif-display text-xl md:text-[22px] text-stone-900 dark:text-stone-100">
@@ -55,7 +66,7 @@ export default function AboutTeam() {
                 <div className="mt-2 font-mono-tag text-[11px] uppercase tracking-[0.18em] text-orange-600 dark:text-orange-400">
                   {founder.role}
                 </div>
-              </div>
+              </a>
             ))}
           </div>
         </div>
