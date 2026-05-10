@@ -321,18 +321,13 @@ export default function AboutMission() {
           </div>
 
           {/* Infographic placeholder */}
-          <div className="mt-4">
-            <div className="font-mono-tag text-[11px] uppercase tracking-[0.2em] text-stone-400 dark:text-stone-600 mb-4">
-              Theory of change 
-            </div>
-            <div className="w-full aspect-[21/9] rounded-lg overflow-hidden border border-stone-200 dark:border-stone-800 bg-stone-50 dark:bg-stone-900/60">
-              <img
-                src={`${process.env.PUBLIC_URL}/images/infographic.jpg`}
-                alt="Theory of change infographic"
-                loading="lazy"
-                className="w-full h-full object-cover"
-              />
-            </div>
+         <div className="mt-8">
+            <img
+              src={`${process.env.PUBLIC_URL}/images/infographic.svg`}
+              alt="Theory of change infographic"
+              loading="lazy"
+              className="w-full h-auto object-contain"
+            />
           </div>
 
         </div>
