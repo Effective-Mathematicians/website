@@ -13,7 +13,13 @@ const navItems = [
       { to: "/learn/resources", label: "Resources" },
     ],
   },
-  { to: "/about", label: "About" },
+  {
+    label: "About",
+    dropdown: [
+      { to: "/about/mission", label: "Mission and values" },
+      { to: "/about/team", label: "Our Team" },
+    ],
+  },
   { to: "/contact", label: "Contact" },
 ];
 
@@ -21,7 +27,10 @@ export default function Header() {
   const [mobileOpen, setMobileOpen] = useState(false);
   const [learnOpen, setLearnOpen] = useState(false);
   const location = useLocation();
+  const [aboutOpen, setAboutOpen] = useState(false);
   const homeUrl = `${process.env.PUBLIC_URL || ""}/`;
+  const isLearnActive = location.pathname.startsWith("/learn");
+  const isAboutActive = location.pathname.startsWith("/about");
 
   const handleTopOfPageClick = (targetPath) => (event) => {
     if (location.pathname === targetPath) {
@@ -33,6 +42,7 @@ export default function Header() {
   useEffect(() => {
     setMobileOpen(false);
     setLearnOpen(false);
+    setAboutOpen(false);
   }, [location.pathname]);
 
   return (
@@ -65,28 +75,45 @@ export default function Header() {
               <div
                 key={item.label}
                 className="relative"
-                onMouseEnter={() => setLearnOpen(true)}
-                onMouseLeave={() => setLearnOpen(false)}
+                onMouseEnter={() => {
+                  if (item.label === "Learn") setLearnOpen(true);
+                  if (item.label === "About") setAboutOpen(true);
+                }}
+                onMouseLeave={() => {
+                  if (item.label === "Learn") setLearnOpen(false);
+                  if (item.label === "About") setAboutOpen(false);
+                }}
               >
                 <button
-                  className="flex items-center gap-1 px-4 py-2 text-[15px] text-stone-700 dark:text-stone-300 hover:text-orange-600 dark:hover:text-orange-400 transition-colors"
-                  data-testid="learn-dropdown-trigger"
-                  onClick={() => setLearnOpen((v) => !v)}
+                  className={`flex items-center gap-1 px-4 py-2 text-[15px] transition-colors ${
+                    (item.label === "Learn" && isLearnActive) || (item.label === "About" && isAboutActive)
+                      ? "text-orange-600 dark:text-orange-400"
+                      : "text-stone-700 dark:text-stone-300 hover:text-orange-600 dark:hover:text-orange-400"
+                  }`}
+                  data-testid={`${item.label.toLowerCase()}-dropdown-trigger`}
+                  onClick={() => {
+                    if (item.label === "Learn") setLearnOpen((v) => !v);
+                    if (item.label === "About") setAboutOpen((v) => !v);
+                  }}
                 >
                   {item.label}
-                  <ChevronDown size={14} className={`transition-transform ${learnOpen ? "rotate-180" : ""}`} />
+                  <ChevronDown size={14} className={`transition-transform ${(item.label === "Learn" ? learnOpen : aboutOpen) ? "rotate-180" : ""}`} />
                 </button>
-                {learnOpen && (
+                {(item.label === "Learn" ? learnOpen : aboutOpen) && (
                   <div
                     className="absolute left-0 top-full pt-2 min-w-[200px]"
-                    data-testid="learn-dropdown-menu"
+                    data-testid={`${item.label.toLowerCase()}-dropdown-menu`}
                   >
                     <div className="bg-white dark:bg-stone-900 border border-stone-200 dark:border-stone-800 shadow-lg rounded-md overflow-hidden py-1">
                       {item.dropdown.map((sub) => (
                         <Link
                           key={sub.to}
                           to={sub.to}
-                          className="block px-4 py-2 text-[14px] text-stone-700 dark:text-stone-200 hover:bg-stone-50 dark:hover:bg-stone-800 hover:text-orange-700 dark:hover:text-orange-400 transition-colors"
+                          className={`block px-4 py-2 text-[14px] transition-colors ${
+                            location.pathname === sub.to
+                              ? "text-orange-700 dark:text-orange-400 bg-stone-50 dark:bg-stone-800"
+                              : "text-stone-700 dark:text-stone-200 hover:bg-stone-50 dark:hover:bg-stone-800 hover:text-orange-700 dark:hover:text-orange-400"
+                          }`}
                           data-testid={`dropdown-link-${sub.label.toLowerCase().replace(/\s+/g, "-")}`}
                         >
                           {sub.label}
@@ -144,7 +171,13 @@ export default function Header() {
             {navItems.map((item) =>
               item.dropdown ? (
                 <div key={item.label} className="border-b border-stone-200 dark:border-stone-800 pb-2 mb-1">
-                  <div className="font-mono-tag text-[10px] uppercase tracking-[0.22em] text-orange-600 px-1 py-2">
+                  <div
+                    className={`font-mono-tag text-[10px] uppercase tracking-[0.22em] px-1 py-2 ${
+                      (item.label === "Learn" && isLearnActive) || (item.label === "About" && isAboutActive)
+                        ? "text-orange-600 dark:text-orange-400"
+                        : "text-stone-500 dark:text-stone-400"
+                    }`}
+                  >
                     {item.label}
                   </div>
                   {item.dropdown.map((sub) => (
@@ -152,7 +185,11 @@ export default function Header() {
                       key={sub.to}
                       to={sub.to}
                       onClick={handleTopOfPageClick(sub.to)}
-                      className="block px-1 py-2 text-stone-800 dark:text-stone-200 hover:text-orange-700 dark:hover:text-orange-400"
+                      className={`block px-1 py-2 transition-colors ${
+                        location.pathname === sub.to
+                          ? "text-orange-600 dark:text-orange-400"
+                          : "text-stone-800 dark:text-stone-200 hover:text-orange-700 dark:hover:text-orange-400"
+                      }`}
                       data-testid={`mobile-dropdown-link-${sub.label.toLowerCase().replace(/\s+/g, "-")}`}
                     >
                       {sub.label}

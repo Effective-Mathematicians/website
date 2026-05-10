@@ -501,7 +501,7 @@ export default function Home() {
                 <ArrowRight size={16} className="group-hover:translate-x-1 transition-transform" />
               </Link>
               <Link
-                to="/about"
+                to="/about/mission"
                 className="inline-flex items-center gap-2 border border-stone-200/60 text-white hover:bg-white hover:text-stone-900 px-5 md:px-6 py-3 md:py-3.5 text-sm font-medium tracking-wide transition-colors rounded-full"
                 data-testid="hero-cta-about"
               >
@@ -545,7 +545,7 @@ export default function Home() {
               <h3 className="font-serif-display text-2xl md:text-[28px] text-stone-900 dark:text-stone-100 leading-tight">A discipline</h3>
               <p className="mt-5 text-stone-700 dark:text-stone-300 text-lg leading-[1.7]">
                 Someone who treats the question <em>"what should I work on?"</em> with the same rigor they bring to a proof: using mathematics, and the careful habits of mind that come with it to identify the problems where their effort buys the most expected impact in the world.{" "}
-                <Link to="/about" className="em-link text-orange-700 dark:text-orange-400">Read more</Link>.
+                <Link to="/about/mission" className="em-link text-orange-700 dark:text-orange-400">Read more</Link>.
               </p>
             </div>
             <div>
