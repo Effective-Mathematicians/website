@@ -28,21 +28,20 @@ const PROGRAMS = [
   {
     num: "01",
     title: "Resource hub",
-    body: "A curated library of articles and books designed to help members understand high-impact cause areas and explore how their mathematical skills can be applied to them. Whether you're new to effective altruism or already familiar with the landscape, the Resource Hub can give you a clear starting point and a deeper foundation to build upon.",
+    body: "A curated pathway that helps mathematicians orient quickly. We highlight the best existing material and resources out there and map it to the questions mathematicians care about.",
     href: "/learn/resources",
   },
   {
     num: "02",
-    title: "Community forum",
-    body: "Our community forum hosted on GitHub Discussions allows members to share ideas, comment on proposals, collaborate on projects, and build on each other's work. It's a space designed for collective thinking and encourages communities to join in with members to make comments, suggest ideas, and help each other out.",
-    href: "https://github.com/orgs/High-Impact-Mathematicians/discussions",
-    external: true,
+    title: "Project hub",
+    body: "We connect projects that need quantitative or mathematical expertise with people who can contribute. This includes open research questions, collaborations, and partner-led problems worth exploring.",
   },
   {
     num: "03",
-    title: "Introductory course",
-    body: "A structured course delivered through this website, designed for those just getting started. The course introduces the core ideas in our space, outlines the most important cause areas, and helps newcomers find their footing.",
-    status: "In progress",
+    title: "Community and events",
+    body: "A tight-knit, welcoming community. We run collaborative ideation, hackathons, workshops, and guest sessions so mathematicians can meet peers and build together.",
+    href: "https://github.com/orgs/High-Impact-Mathematicians/discussions",
+    external: true,
   },
 ];
 
@@ -105,7 +104,7 @@ export default function AboutMission() {
           <div className="grid grid-cols-1 md:grid-cols-12 gap-10 md:gap-16 items-start">
             <div className="md:col-span-12 space-y-5 text-stone-700 dark:text-stone-300 text-[17px] leading-[1.75] max-w-5xl">
               <p>
-                Every year, thousands of mathematicians and quantitatively trained graduates enter academia, finance, and industry. The overwhelming majority spend their careers on problems that are intellectually rich; however, they are largely disconnected from the world's most pressing problems.
+                Mathematicians are trained to solve the hardest quantitative problems. Yet most mathematical talent flows into academia, finance, and industry while the world's most pressing problems continue to remain under-resourced.
               </p>
               <blockquote className="my-8 pl-6 border-l-4 border-orange-500 dark:border-orange-400">
                 <p className="font-serif-display text-2xl md:text-3xl text-stone-900 dark:text-stone-100 leading-snug italic">
@@ -113,10 +112,16 @@ export default function AboutMission() {
                 </p>
               </blockquote>
               <p>
-                The world's most pressing cause areas, from biosecurity and climate change to global health and farmed animal welfare, are severely underpowered. They lack quantitative minds willing to turn their skills toward them. These problems are technically complex, very neglected, and in many cases, tractable. 
+                The most urgent cause areas, from biosecurity and climate change to global health and farmed animal welfare, are technically complex, deeply neglected, and often tractable. They need quantitative minds willing to turn their skills toward them.
               </p>
               <p>
-                Unfortunately, no unified community exists for them to do so. There is no dedicated space where mathematicians and quantitative thinkers can come together to explore high-impact opportunities, exchange ideas, develop proposals, and direct their skills toward work that genuinely matters. As a result, so many talented people simply don't know what's possible with their skills. Many underestimate what they could contribute. Most have far more potential to do good than they realise!
+                There are numerous resources online such as fellowships, introductory EA courses, and books and articles that can be read. But none provide a dedicated space for mathematicians to work together and help each other translate their mathematical skills into concrete impact pathways.
+              </p>
+              <p>
+                There is a lack of a larger quantitative network focused on contributing to high-impact cause areas. Mathematics is not as much of a socially focused community compared to other fields. We want this community to be a home where you can connect, build specific skills, and use your work for good causes.
+              </p>
+              <p>
+                If you are an early-career mathematician or a math student who wants to use your skills for altruistic ambitions, this is the right place.
               </p>
             </div>
           </div>
@@ -148,14 +153,14 @@ export default function AboutMission() {
                 Mission
               </h6>
               <p className="text-stone-200 text-[17px] leading-[1.8] font-medium">
-                To build the first unified global community for mathematicians and quantitative thinkers to learn about high-impact cause areas, connect with peers, and produce work that truly matters.
+                To build the first unified global community for early career mathematicians and quantitative thinkers to learn about high-impact cause areas, connect with peers, and produce work that truly matters. 
               </p>
               <div className="mt-6 w-12 h-px bg-orange-500/60" />
               <p className="mt-6 text-stone-400 text-[15px] leading-[1.75]">
-                Today, the mathematical community's most visible spaces tend to be competitive mathematics forums and academic circles, which are arguably oriented around demonstrating ability or advancing academia. While these communities are valuable, they celebrate what mathematicians can do, without often using their skills to address real-world challenges.
+                Today, the mathematical community's most visible spaces tend to be competitive mathematics forums and academic circles. While these communities are valuable, they often celebrate what mathematicians can do without directing those skills toward real-world challenges.
               </p>
               <p className="mt-4 text-stone-400 text-[15px] leading-[1.75]">
-                We are building a community defined by contribution to the world's most important cause areas. We want to connect like-minded individuals, surface high-impact opportunities, foster meaningful collaboration, and grow a space for mathematicians to use their abilities for good.
+                We are building a community defined by contribution to the world's most important cause areas. We connect like-minded individuals, surface high-impact opportunities, foster meaningful collaboration, and grow a space for mathematicians to use their abilities for good.
               </p>
             </div>
           </div>
@@ -174,7 +179,7 @@ export default function AboutMission() {
             </h2>
             <div className="ea-rule mb-6" />
             <p className="text-stone-600 dark:text-stone-400 leading-relaxed text-[16px]">
-              We work with mathematicians and quantitative thinkers of all ages and backgrounds to help them in directing their skills toward the world's most pressing problems. Our work is centered around three core initiatives:
+              Our target audience is early-career mathematicians and quantitative thinkers. We help them direct their skills toward the world's most pressing problems through three core initiatives:
             </p>
           </div>
 
@@ -231,6 +236,10 @@ export default function AboutMission() {
             })}
           </div>
 
+          <div className="mb-16 text-stone-600 dark:text-stone-400 text-[15px] leading-relaxed">
+            We also support career transitions by sharing pathways, case studies, and skill-to-impact mappings inspired by 80,000 Hours. We facilitate referrals between EA organizations and technical mathematicians so talent can move toward high-impact roles faster.
+          </div>
+
           <div className="relative bg-stone-900 dark:bg-stone-900 rounded-lg p-8 md:p-10 overflow-hidden">
             <div
               aria-hidden
@@ -265,7 +274,7 @@ export default function AboutMission() {
             </h2>
             <div className="ea-rule mb-6" />
             <p className="text-stone-600 dark:text-stone-400 text-[16px] leading-relaxed">
-              We track two core indicators to evaluate whether we are actually achieving our goal of redirecting mathematical talent toward high-impact causes.
+              We track metrics that show whether the community is moving mathematical talent toward high-impact work.
             </p>
           </div>
 
@@ -278,10 +287,10 @@ export default function AboutMission() {
                 Metric 1
               </div>
               <h3 className="font-serif-display text-2xl text-stone-900 dark:text-stone-100 mb-3">
-                Participant perspective shift
+                Events and participation
               </h3>
               <p className="text-stone-600 dark:text-stone-400 text-[15px] leading-relaxed">
-                The number of participants who changed their stance on how mathematics can be used for impactful causes, and which causes matter most. We measure this through a survey completed after participants finish the introductory course.
+                The number of events organized and the number of attendees per event. We track the reach and depth of our engagement.
               </p>
             </article>
 
@@ -293,10 +302,40 @@ export default function AboutMission() {
                 Metric 2
               </div>
               <h3 className="font-serif-display text-2xl text-stone-900 dark:text-stone-100 mb-3">
-                Projects developed
+                Research questions answered
               </h3>
               <p className="text-stone-600 dark:text-stone-400 text-[15px] leading-relaxed">
-                The number of projects developed that aim to do good using mathematics and quantiative tools, and direct work toward high-impact cause areas.
+                The number of EA-aligned mathematical research questions answered or advanced through community work.
+              </p>
+            </article>
+
+            <article className="bg-white dark:bg-stone-900 border border-stone-200 dark:border-stone-800 rounded-lg p-8 md:p-10 hover:border-orange-400/50 dark:hover:border-orange-500/40 transition-colors">
+              <div className="font-serif-display text-6xl md:text-7xl text-orange-600/20 dark:text-orange-400/20 leading-none mb-4 select-none" aria-hidden>
+                03
+              </div>
+              <div className="font-mono-tag text-[11px] uppercase tracking-[0.2em] text-orange-600 dark:text-orange-400 mb-3">
+                Metric 3
+              </div>
+              <h3 className="font-serif-display text-2xl text-stone-900 dark:text-stone-100 mb-3">
+                Ideas generated
+              </h3>
+              <p className="text-stone-600 dark:text-stone-400 text-[15px] leading-relaxed">
+                The number of ideas generated for mathematical solutions to EA-relevant problems.
+              </p>
+            </article>
+
+            <article className="bg-white dark:bg-stone-900 border border-stone-200 dark:border-stone-800 rounded-lg p-8 md:p-10 hover:border-orange-400/50 dark:hover:border-orange-500/40 transition-colors">
+              <div className="font-serif-display text-6xl md:text-7xl text-orange-600/20 dark:text-orange-400/20 leading-none mb-4 select-none" aria-hidden>
+                04
+              </div>
+              <div className="font-mono-tag text-[11px] uppercase tracking-[0.2em] text-orange-600 dark:text-orange-400 mb-3">
+                Metric 4
+              </div>
+              <h3 className="font-serif-display text-2xl text-stone-900 dark:text-stone-100 mb-3">
+                Career impact shifts
+              </h3>
+              <p className="text-stone-600 dark:text-stone-400 text-[15px] leading-relaxed">
+                The number of mathematicians who self-report pivoting to higher-impact careers due to the community.
               </p>
             </article>
           </div>
@@ -316,7 +355,7 @@ export default function AboutMission() {
             </h2>
             <div className="ea-rule mb-8" />
             <p className="text-stone-600 dark:text-stone-400 text-[17px] leading-relaxed">
-              The world's most pressing problems are severely neglected and deeply quantitative in nature. Yet the mathematicians and quantitative thinkers best equipped to work on them are rarely guided toward these cause areas. High Impact Mathematicians addresses this by building a global, open community that connects peers, shares resources, and helps people direct their skills toward the cause areas where they can do the most good.
+              Our theory of change is simple. The world's most pressing problems are severely neglected and deeply quantitative in nature, yet the mathematicians best equipped to work on them are rarely guided toward these cause areas. We focus on three levers: provide a clear on-ramp using existing high-quality resources, coordinate mathematicians through a tight-knit community, and match skills to concrete projects and research questions. Iterating on this logic has shaped our current mission and strategy.
             </p>
           </div>
 
@@ -346,7 +385,7 @@ export default function AboutMission() {
             <div className="ea-rule mb-6" />
             <div className="space-y-4 text-stone-600 dark:text-stone-400 text-[16px] leading-relaxed">
               <p>
-                High Impact Mathematicians does not require its members to subscribe to any particular school of thought. That said, our movement draws heavily on ideas emerging from the effective altruism community. This is because we believe EA has surfaced some very useful frameworks and heuristics for thinking about how to do the most good.
+                High Impact Mathematicians does not require its members to subscribe to any particular school of thought. That said, our movement draws heavily on ideas emerging from effective altruism and moral ambition. We believe EA has surfaced useful frameworks for thinking about how to do the most good, and moral ambition pushes us to take those conclusions seriously in our choices and careers.
               </p>
             </div>
           </div>

@@ -24,21 +24,21 @@ const STEPS = [
     number: "01",
     Icon: Users,
     title: "Join the Community Forum",
-    body: "Our Community Forum hosted on GitHub Discussions forum allows you to browse open questions, connect with mathematicians working on high-impact problems, and see what's already being built.",
+    body: "Our Community Forum on GitHub Discussions is the home base. Meet other mathematicians, see open questions, and find collaborators working on high-impact problems.",
     cta: { label: "Open the forum", href: FORUM_URL, external: true },
   },
   {
     number: "02",
     Icon: PenLine,
-    title: "Make Your First Post",
-    body: "Introduce yourself, share a problem you're curious about, or post a draft idea. The forum is intentionally low-stakes and welcomes half-formed thoughts.",
-    cta: { label: "Start a discussion", href: FORUM_URL, external: true },
+    title: "Use the resource pathway",
+    body: "We do not reinvent the wheel for course content. Start with the best existing resources and use our curation to connect them to math-relevant questions.",
+    cta: { label: "View the resources", to: "/learn/resources" },
   },
   {
     number: "03",
     Icon: Lightbulb,
-    title: "Pick an Impactful Cause Area",
-    body: "Browse cause areas, from biosecurity to AI safety to climate change, and find where your mathematical skills can do the most good. Write a problem profile, join a project, or start your own.",
+    title: "Join a project or open question",
+    body: "Find a project that needs quantitative expertise or take on an open research question. You can also propose your own collaboration and invite others in.",
     cta: { label: "Explore cause areas", to: "/learn/cause-areas" },
   },
 ];
@@ -172,7 +172,7 @@ export default function TakeAction() {
                     Become a High Impact Mathematician
                   </h1>
                   <p className="mt-4 md:mt-6 text-stone-600 dark:text-stone-400 text-base md:text-xl leading-relaxed max-w-lg">
-                    Join a growing community of mathematicians directing their skills toward the world's most pressing problems. Connect, collaborate, and contribute to cause areas where your skills can matter most.
+                    Join a growing community of early-career mathematicians directing their skills toward the world's most pressing problems. Learn from the best existing resources, connect with peers, and contribute to projects where your skills can matter most.
                   </p>
                   <div className="mt-6 md:mt-8 flex flex-col sm:flex-row flex-wrap gap-3 md:gap-4">
                     <a

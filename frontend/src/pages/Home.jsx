@@ -489,7 +489,7 @@ export default function Home() {
               <em className="text-orange-300 not-italic font-serif-display italic">to the problems that matter most.</em>
             </h1>
             <p className="mt-6 md:mt-8 max-w-2xl text-stone-100 text-base md:text-xl leading-relaxed">
-              We're a community of mathematicians that use quantitative methods to address the world's most pressing problems.
+              We're a home for early-career mathematicians who want to use their skills for good. We connect peers, curate the best existing resources, and match talent to real projects and open research questions.
             </p>
             <div className="mt-8 md:mt-10 flex flex-wrap items-center gap-3 md:gap-4">
               <Link
@@ -545,10 +545,10 @@ export default function Home() {
             <div className="flex flex-col justify-between h-full">
               <div className="space-y-5">
                 <p className="text-stone-700 dark:text-stone-300 text-[16px] leading-[1.75]">
-                  High Impact Mathematicians is a global, open community built for mathematicians and quantitative thinkers who want to direct their skills toward the world's most pressing problems. We believe mathematical talent is one of the most powerful and under-directed forces for good.
+                  High Impact Mathematicians is a global, open community built for early-career mathematicians and quantitative thinkers who want to direct their skills toward the world's most pressing problems. We believe mathematical talent is one of the most powerful and under-directed forces for good.
                 </p>
                 <p className="text-stone-700 dark:text-stone-300 text-[16px] leading-[1.75]">
-                  Our community connects people across career stages and backgrounds to help members find the path from their mathematical skill to real-world impact. We draw on ideas from the effective altruism community to ask where mathematical effort is most needed, and where it can help generate the most impact.
+                  We do not reinvent the wheel for course content. Instead, we highlight the best existing resources and build the missing infrastructure: a dedicated community, a project hub, and a clear path from skills to impact.
                 </p>
               </div>
               <Link
@@ -564,7 +564,7 @@ export default function Home() {
               <div className="border-t border-stone-200 dark:border-stone-800 py-6">
                 <div className="font-mono-tag text-[11px] uppercase tracking-[0.22em] text-orange-600 dark:text-orange-400 mb-2">Our goal</div>
                 <p className="text-stone-700 dark:text-stone-300 text-[16px] leading-[1.7]">
-                  To become the first unified platform where mathematicians learn about high-impact cause areas, collaborate on meaningful projects, and redirect their expertise towards the causes that matter most.
+                  To become the first unified platform where mathematicians learn about high-impact cause areas, collaborate on meaningful projects, and redirect their expertise toward the causes that matter most.
                 </p>
               </div>
               <div className="border-t border-b border-stone-200 dark:border-stone-800 py-6">
